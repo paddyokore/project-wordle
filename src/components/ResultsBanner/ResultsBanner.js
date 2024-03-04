@@ -1,7 +1,6 @@
 import React from 'react';
-import { answer } from '../Game';
 
-function ResultsBanner( {status, numofGuessList, answer} ) {
+function ResultsBanner( {status, numofGuessList, answer, handleClick} ) {
   const size = numofGuessList === 1? '1 guess': `${numofGuessList} guesses`
   if (status === 'won') {
     return (
@@ -11,12 +10,14 @@ function ResultsBanner( {status, numofGuessList, answer} ) {
           {' '}
           <strong>{size}</strong>.
         </p>
+        <button onClick={handleClick}><strong>Restart Game</strong></button>
       </div>
     );
   } else if (status === 'lost') {
     return (
       <div className="sad banner">
         <p>Sorry, the correct answer is <strong>{answer}</strong>.</p>
+        <button onClick={handleClick}><strong>Restart Game</strong></button>
       </div>
     );
   }
