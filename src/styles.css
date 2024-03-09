@@ -370,6 +370,8 @@ h1 {
   .dialog {
     height: max-content;
     width: max-content;
+    max-height: 80%;
+    max-width: 80%;
   }
 }
 
