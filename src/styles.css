@@ -298,8 +298,8 @@ h1 {
   }
 
   .icon img {
-    height: fit-content;
-    width: fit-content;
+    height: 200;
+    width: 300;
   }
 }
 
