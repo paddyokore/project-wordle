@@ -1,6 +1,8 @@
 import React from "react";
 import { useToggle } from "../../utils";
 import GameInstructions from "../GameInstructions/GameInstructions";
+import demo from '../../../public/wordle-demo.gif'
+import instructions from '../../../public/instructions.jpg';
 
 function HomePage() {
   const [isInstructionsModalOpen, toggleInstructionsModal] = useToggle(false);
@@ -33,7 +35,7 @@ function HomePage() {
                 handleDismiss={toggleDemoModal}
               >
                 <img
-                  src="/public/wordle-icon.svg"
+                  src={demo}
                   width={900}
                   height={500}
                   alt="game demo"
@@ -53,7 +55,7 @@ function HomePage() {
                 handleDismiss={toggleInstructionsModal}
               >
                 <img
-                  src="/public/instructions.jpg"
+                  src={instructions}
                   alt="game instructions"
                 />
               </GameInstructions>
