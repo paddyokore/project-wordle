@@ -1,8 +1,7 @@
 import React from "react";
 import { useToggle } from "../../utils";
 import GameInstructions from "../GameInstructions/GameInstructions";
-import demo from '../../../public/wordle-demo.gif'
-
+import demo from "../../../public/wordle-demo.gif";
 
 function HomePage() {
   const [isInstructionsModalOpen, toggleInstructionsModal] = useToggle(false);
@@ -20,7 +19,7 @@ function HomePage() {
           <h1 className="title">Word Game</h1>
           <h1 className="subtitle">Guess the word in 6 tries.</h1>
           <div className="buttonContainer">
-          <button
+            <button
               key="play"
               className="buttonContainer play-button"
               onClick={() => {
@@ -34,12 +33,7 @@ function HomePage() {
                 title="game demo"
                 handleDismiss={toggleDemoModal}
               >
-                <img
-                  src={demo}
-                  width={900}
-                  height={500}
-                  alt="game demo"
-                />
+                <img src={demo} alt="game demo" />
               </GameInstructions>
             )}
             <button
@@ -54,10 +48,7 @@ function HomePage() {
                 title="Game Instructions"
                 handleDismiss={toggleInstructionsModal}
               >
-                <img
-                  src="/public/instructions.jpg"
-                  alt="game instructions"
-                />
+                <img src="/public/instructions.jpg" alt="game instructions" />
               </GameInstructions>
             )}
             <button
