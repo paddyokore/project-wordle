@@ -283,20 +283,6 @@ h1 {
   font-size: 24.8px;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 480px) {
-  .title {
-    font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 8px;
-  }
-
-  .subtitle {
-    font-size: 22px;
-    line-height: 22px;
-    margin-bottom: 16px;
-  }
-}
 
 .buttonContainer {
   display: flex;
@@ -367,6 +353,25 @@ h1 {
   cursor: pointer;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+  .title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+
+  .dialog {
+    height: max-content;
+    width: max-content;
+  }
+}
 
 
 
