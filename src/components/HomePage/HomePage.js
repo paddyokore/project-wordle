@@ -1,6 +1,7 @@
 import React from "react";
 import { useToggle } from "../../utils";
 import GameInstructions from "../GameInstructions/GameInstructions";
+import Image from "next/image";
 
 function HomePage() {
   const [isInstructionsModalOpen, toggleInstructionsModal] = useToggle(false);
@@ -33,7 +34,9 @@ function HomePage() {
                 handleDismiss={toggleDemoModal}
               >
                 <img
-                  src="/docs/wordle-demo.gif"
+                  src="/public/wordle-demo.gif"
+                  width={900}
+                  height={500}
                   alt="game demo"
                 />
               </GameInstructions>
@@ -51,7 +54,7 @@ function HomePage() {
                 handleDismiss={toggleInstructionsModal}
               >
                 <img
-                  src="/docs/instructions.jpg"
+                  src="/public/instructions.jpg"
                   alt="game instructions"
                 />
               </GameInstructions>
