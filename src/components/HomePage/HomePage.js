@@ -34,7 +34,7 @@ function HomePage() {
                 handleDismiss={toggleDemoModal}
               >
                 <img
-                  src={require("/src/wordle-demo.gif")}
+                  src="/src/wordle-demo.gif"
                   width={900}
                   height={500}
                   alt="game demo"
@@ -54,7 +54,7 @@ function HomePage() {
                 handleDismiss={toggleInstructionsModal}
               >
                 <img
-                  src={require("/src/instructions.jpg")}
+                  src="/src/instructions.jpg"
                   alt="game instructions"
                 />
               </GameInstructions>
