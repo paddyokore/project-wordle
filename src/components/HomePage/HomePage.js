@@ -2,6 +2,7 @@ import React from "react";
 import { useToggle } from "../../utils";
 import GameInstructions from "../GameInstructions/GameInstructions";
 import demo from "../../../public/wordle-demo.gif";
+import instructions from "../../../public/instructions.png";
 
 function HomePage() {
   const [isInstructionsModalOpen, toggleInstructionsModal] = useToggle(false);
@@ -48,7 +49,7 @@ function HomePage() {
                 title="Game Instructions"
                 handleDismiss={toggleInstructionsModal}
               >
-                <img src="/public/instructions.jpg" alt="game instructions" />
+                <img src={instructions} alt="game instructions" />
               </GameInstructions>
             )}
             <button
