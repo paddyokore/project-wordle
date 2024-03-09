@@ -368,8 +368,8 @@ h1 {
   }
 
   .dialog {
-    height: fit-content;
-    width: 350;
+    height: 300;
+    width: 300;
   }
 }
 
