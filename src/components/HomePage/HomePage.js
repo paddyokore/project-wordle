@@ -33,7 +33,7 @@ function HomePage() {
                 handleDismiss={toggleDemoModal}
               >
                 <img
-                  src="/public/wordle-demo.gif"
+                  src="/public/wordle-icon.svg"
                   width={900}
                   height={500}
                   alt="game demo"
