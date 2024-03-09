@@ -1,7 +1,6 @@
 import React from "react";
 import { useToggle } from "../../utils";
 import GameInstructions from "../GameInstructions/GameInstructions";
-import Image from "next/image";
 
 function HomePage() {
   const [isInstructionsModalOpen, toggleInstructionsModal] = useToggle(false);
