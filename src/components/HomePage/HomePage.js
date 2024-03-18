@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useToggle } from "../../utils";
 import GameInstructions from "../GameInstructions/GameInstructions";
 import demo from "../../../public/wordle-demo.gif";
@@ -7,6 +8,12 @@ import instructions from "../../../public/instructions.png";
 function HomePage() {
   const [isInstructionsModalOpen, toggleInstructionsModal] = useToggle(false);
   const [isDemoModalOpen, toggleDemoModal] = useToggle(false);
+
+  const history = useNavigate();
+
+  const handleClick = () => {
+    history("/game");
+  };
   return (
     <div>
       <div className="main-wrapper">
@@ -23,11 +30,9 @@ function HomePage() {
             <button
               key="play"
               className="buttonContainer play-button"
-              onClick={() => {
-                window.location.reload();
-              }}
+              onClick={handleClick}
             >
-              Play game
+              Play Game
             </button>
             {isDemoModalOpen && (
               <GameInstructions
@@ -60,6 +65,7 @@ function HomePage() {
               Game instructions
             </button>
           </div>
+          <footer>Developed by Patrick Okore</footer>
         </div>
       </div>
     </div>
