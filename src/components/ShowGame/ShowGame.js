@@ -6,8 +6,8 @@ import Header from '../Header';
 function ShowGame() {
   return (
     <div className="wrapper">
-      <Header />      
-
+      <Header />
+      <a className="home" href='/'>Home</a>   
       <div className="game-wrapper">
         <Game />
       </div>

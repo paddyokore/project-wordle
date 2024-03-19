@@ -68,6 +68,10 @@ h1 {
   text-align: center;
 }
 
+.home {
+  text-align: center;
+}
+
 @media (max-width: 25rem) {
   h1 {
     font-size: 1.25rem;
